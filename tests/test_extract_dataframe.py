@@ -11,7 +11,7 @@ from extract_dataframe import TweetDfExtractor
 from extract_dataframe import read_json
 
 # Unzipping the data and reading it
-with zipfile.ZipFile("data/Economic_Twitter_Data.zip", "r") as unzipping:
+with zipfile.ZipFile("../data/Economic_Twitter_Data.zip", "r") as unzipping:
     unzipping.extractall("data/")
 _, tweet_list = read_json("../data/Economic_Twitter_Data.json")
 
