@@ -1,13 +1,6 @@
 name: Twitter CI action
 
-# on:
-#   push:
-#     branches: [  ]
-#   pull_request:
-#     branches: [ ]
-
-on: push
-on: pull_request
+on: [push,pull_request]
 
 permissions:
   contents: read
