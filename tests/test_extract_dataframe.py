@@ -3,12 +3,16 @@ import pandas as pd
 import unittest
 import sys
 import os
+import zipfile
 
 sys.path.append(os.path.abspath(os.path.join('..')))
 
 from extract_dataframe import TweetDfExtractor
 from extract_dataframe import read_json
 
+# Unzipping the data and reading it
+with zipfile.ZipFile("data/Economic_Twitter_Data.zip", "r") as unzipping:
+    unzipping.extractall("data/")
 _, tweet_list = read_json("../data/Economic_Twitter_Data.json")
 
 columns = ['created_at', 'source', 'original_text', 'clean_text', 'sentiment', 'polarity', 'subjectivity', 'lang', 'favorite_count', 'retweet_count',
