@@ -18,6 +18,9 @@ sudo apt update
 sudo apt install python3-pip
 ```
 
+## Live demo to the project result
+
+- [Streamlit](https://share.streamlit.io/micky373/twitter-data-analysis/main/dashboard.py)
 
 
 ## Installing
@@ -59,4 +62,4 @@ The following code enables you ti run unit test
 2. Run Test
    ```bash
    python3 test_extract_dataframe.py
-   ``
+   ```
